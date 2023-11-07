@@ -10,9 +10,10 @@ export const Contact = () => {
     mobile: '',
     email: '',
     howDidYouHearAboutUs: '',
+    interestedIn: '',
   })
 
-  const { firstName, lastName, mobile, email, howDidYouHearAboutUs } = formData
+  const { firstName, lastName, mobile, email, howDidYouHearAboutUs, interestedIn } = formData
 
   const onChange = e => {
     console.log(e.target.value)
@@ -30,7 +31,7 @@ export const Contact = () => {
             <input value={lastName} required type='text' name='lastName' className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Last Name*' onChange={e => onChange(e)} />
             <input value={mobile} required type='tel' name='mobile' className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Mobile*' onChange={e => onChange(e)} />
             <input value={email} required type='email' name='email' className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Email*' onChange={e => onChange(e)} />
-            <select name="interestedIn" onChange={e => onChange(e)} required placeholder='Interested In' id="interestedIn" className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
+            <select name="interestedIn" value={interestedIn} onChange={e => onChange(e)} required placeholder='Interested In' id="interestedIn" className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
               <option value="" hidden className=''>Interested In</option>
               <option value="realEstate" className='py-2'>Real Estate Advertisment</option>
               <option value="film" className=''>Fim Making</option>
@@ -38,7 +39,7 @@ export const Contact = () => {
               <option value="gold" className=''>Gold Plan</option>
               <option value="diamond" className=''>Diamond Plan</option>
             </select>
-            <select name="howDidYouHearAboutUs" onChange={e => onChange(e)} required placeholder='How Did You Hear About Us' id="howDidYouHearAboutUs" className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
+            <select name="howDidYouHearAboutUs" value={howDidYouHearAboutUs} onChange={e => onChange(e)} required placeholder='How Did You Hear About Us' id="howDidYouHearAboutUs" className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
               <option value="" hidden className=''>How Did You Hear About Us</option>
               <option value="wordOfMouth" className='py-2'>Word Of Mouth</option>
               <option value="facebook" className=''>Facebook</option>

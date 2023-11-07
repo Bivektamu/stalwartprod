@@ -1,12 +1,6 @@
 
 import React from 'react'
 export const Footer = () => {
-  
-  
-  const onClick = e => {
-    console.log(e.target)
-  }
-
   return (
    <footer className='bg-grey w-full'>
     <div className="lg:container m-auto flex p-10 justify-between items-end">

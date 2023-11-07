@@ -1,7 +1,6 @@
 import React from 'react'
 import { AiFillBulb, AiFillCamera } from 'react-icons/ai'
 import { RiComputerFill } from 'react-icons/ri'
-import { IoFastFoodSharp } from 'react-icons/io5'
 
 export const Hero = () => {
   return (
