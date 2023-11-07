@@ -6,6 +6,7 @@ import Loading from './Loading'
 import Work from './Work'
 import Team from './Team'
 import { Contact } from './Contact'
+import { Footer } from './Footer'
 
 export const Home = () => {
   return (
@@ -29,6 +30,10 @@ export const Home = () => {
 
       <Suspense fallback={<Loading />}>
         <Contact />
+      </Suspense>
+      
+      <Suspense fallback={<Loading />}>
+        <Footer />
       </Suspense>
 
 

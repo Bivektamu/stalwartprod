@@ -21,8 +21,8 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full px-10 py-40">
-          <div className="lg:container m-auto grid grid-cols-1 gap-y-14 lg:grid-cols-4 pt-10 grid gap-x-10">
+        <div className="w-full ">
+          <div className="lg:container px-10 py-40 m-auto grid grid-cols-1 gap-y-14 lg:grid-cols-4 pt-10 grid gap-x-10">
             <div className='text-center'>
               <AiFillBulb className='m-auto mb-6 text-2xl' />
               <h3 className='mb-3'>Concept</h3>

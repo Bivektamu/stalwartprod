@@ -1,14 +1,20 @@
 
 import React from 'react'
 export const Header = () => {
+  
+  
   const onClick = e => {
     console.log(e.target)
   }
+
+
+
+
   return (
-   <header className='flex justify-center p-10 fixed z-10 top-0 left-0 w-full'>
-    <div className="lg:container flex justify-between items-center">
+   <header className={`flex justify-center fixed z-10 top-0 left-0 w-full`}>
+    <div className="lg:container flex p-10 justify-between items-center">
         <li onClick={(e)=> onClick(e)} linkto='#hero' className='list-none cursor-pointer'>
-          <img src='/images/logo-black.svg' alt="" />
+          <img src='/images/logo.svg' alt="" width={100} />
         </li>
 
           <nav className='flex justify-start items-center gap-x-20'>
