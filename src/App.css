@@ -43,3 +43,7 @@
   width: 100%;
   height: 200px;
 }
+
+#captcha {
+text-indent:-99999px; white-space:nowrap; overflow:hidden; position:absolute;
+}
