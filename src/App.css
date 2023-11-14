@@ -39,9 +39,40 @@
 
 
 #loading {
-  background: red;
   width: 100%;
+  background: #f3f3f3;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  overflow: hidden;
+}
+
+#loading:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  width: 200px;
   height: 200px;
+  margin: auto;
+  border-radius: 100%;
+  background: rgba(0,0,0,0.1);
+  /* animation: loader ease-in-out 1.6s infinite; */
+}
+
+@keyframes loader {
+  0% {
+    transform: translateX(-400px);
+  }
+  80% {
+    transform: translateX(800px);
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 #captcha {

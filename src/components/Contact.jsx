@@ -1,6 +1,7 @@
 
-import React, { useState, useRef, useEffect } from 'react'
-import ReCAPTCHA  from 'react-google-recaptcha'
+import React, { useState } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
+import Loader from "./Loader";
 
 export const Contact = () => {
 
@@ -15,18 +16,21 @@ export const Contact = () => {
   })
 
   const [success, setSuccess] = useState(false)
+  const [loading, setLoading] = useState(true)
+  const [captchaCheck, setCaptchaCheck] = useState(false)
   const { firstName, lastName, mobile, email, howDidYouHearAboutUs, interestedIn } = formData
-const captchaRef = useRef(null)
   const onChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
   const onSubmit = async (e) => {
     e.preventDefault()
-    const token = captchaRef.current.getValue()
-    console.log(token)
-    return
 
+    if (!captchaCheck) {
+      return (<p>Please confirm you are not a robot</p>)
+    }
+
+    setLoading(true)
     try {
       const res = await fetch("https://public.herotofu.com/v1/fe550930-81ba-11ee-97b0-f5224e9a6b83", {
         method: 'POST',
@@ -54,52 +58,61 @@ const captchaRef = useRef(null)
 
   }
 
-  function onCaptchaChange(value) {
-    console.log(value)
+  function onCaptchaChange(e) {
+    console.log(e)
+    if (e) {
+      setCaptchaCheck(true)
+    }
   }
+
   return (
     <section id="contact" className=''>
       <div className="lg:container m-auto xl:px-32 md:px-16 py-40">
         <h2 className='mb-4'>Contact Us</h2>
         <p className="text-sm mb-8 w-2/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie lacus in ante vestibulum, vitae aliquam felis feugiat. Nullam euismod risus.</p>
-        <div className="grid grid-cols-3 gap-x-10">
-          {!success? (
-            <form onSubmit={(e) => onSubmit(e)} className='bg-aeroBlue col-span-2  px-8 py-16 grid md:grid-cols-2 gap-x-10 gap-y-10'>
-            <input value={firstName} required type='text' name='firstName' className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='First Name*' onChange={e => onChange(e)} />
-            <input value={lastName} required type='text' name='lastName' className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Last Name*' onChange={e => onChange(e)} />
-            <input value={mobile} required type='tel' name='mobile' className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Mobile*' onChange={e => onChange(e)} />
-            <input value={email} required type='email' name='email' className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Email*' onChange={e => onChange(e)} />
-            <select name="interestedIn" value={interestedIn} onChange={e => onChange(e)} required placeholder='Interested In' id="interestedIn" className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
-              <option value="" hidden className=''>Interested In</option>
-              <option value="realEstate" className='py-2'>Real Estate Advertisment</option>
-              <option value="film" className=''>Fim Making</option>
-              <option value="silver" className=''>Silver Plan</option>
-              <option value="gold" className=''>Gold Plan</option>
-              <option value="diamond" className=''>Diamond Plan</option>
-            </select>
-            <select name="howDidYouHearAboutUs" value={howDidYouHearAboutUs} onChange={e => onChange(e)} required placeholder='How Did You Hear About Us' id="howDidYouHearAboutUs" className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
-              <option value="" hidden className=''>How Did You Hear About Us</option>
-              <option value="wordOfMouth" className='py-2'>Word Of Mouth</option>
-              <option value="facebook" className=''>Facebook</option>
-              <option value="googleAds" className=''>Google Ads</option>
-              <option value="googleSearch" className=''>Google Search</option>
-            </select>
+        <div className="grid grid-cols-3 gap-x-10 ">
+          {!success ? (
+            <>
 
-            <ReCAPTCHA
-              sitekey='6LdCCg0pAAAAAODfQb_snsWQ7oM0EFkYDhIQSGdW'
-              onChange={onCaptchaChange}
-            />
+              <form onSubmit={(e) => onSubmit(e)} className='bg-aeroBlue col-span-2  px-8 py-16 grid md:grid-cols-2 gap-x-10 gap-y-10 relative'>
+              {loading && (<Loader />)}
 
-            <input type="submit" value="Submit" className='cursor-pointer list-none btn text-center bg-black text-white py-2 px-6 font-bold uppercase mt-4 w-32' />
+                <input value={firstName} required type='text' name='firstName' className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='First Name*' onChange={e => onChange(e)} />
+                <input value={lastName} required type='text' name='lastName' className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Last Name*' onChange={e => onChange(e)} />
+                <input value={mobile} required type='tel' name='mobile' className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Mobile*' onChange={e => onChange(e)} />
+                <input value={email} required type='email' name='email' className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Email*' onChange={e => onChange(e)} />
+                <select name="interestedIn" value={interestedIn} onChange={e => onChange(e)} required placeholder='Interested In' id="interestedIn" className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
+                  <option value="" hidden className=''>Interested In</option>
+                  <option value="realEstate" className='py-2'>Real Estate Advertisment</option>
+                  <option value="film" className=''>Fim Making</option>
+                  <option value="silver" className=''>Silver Plan</option>
+                  <option value="gold" className=''>Gold Plan</option>
+                  <option value="diamond" className=''>Diamond Plan</option>
+                </select>
+                <select name="howDidYouHearAboutUs" value={howDidYouHearAboutUs} onChange={e => onChange(e)} required placeholder='How Did You Hear About Us' id="howDidYouHearAboutUs" className='py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
+                  <option value="" hidden className=''>How Did You Hear About Us</option>
+                  <option value="wordOfMouth" className='py-2'>Word Of Mouth</option>
+                  <option value="facebook" className=''>Facebook</option>
+                  <option value="googleAds" className=''>Google Ads</option>
+                  <option value="googleSearch" className=''>Google Search</option>
+                </select>
 
-            
-          </form>
-          ): (
-            <div className="col-span-2  px-8 py-16 gap-x-10 gap-y-10">
+                <ReCAPTCHA
+                  sitekey={process.env.REACT_APP_SITE_KEY}
+                  onChange={e => onCaptchaChange(e)}
+                />
+
+                <input type="submit" value="Submit" className='cursor-pointer list-none btn text-center bg-black text-white py-2 px-6 font-bold uppercase mt-4 w-32' />
+
+
+              </form>
+            </>
+          ) : (
+            <div className="col-span-2  pr-8 py-16 gap-x-10 gap-y-10">
               <h3 className="w-full">Thank yoy for your interest in Stalward Prod Agency.<br /> We will be in touch soon.</h3>
             </div>
           )}
-          
+
 
           <div className='py-16 px-8 bg-secondBlack text-center text-white flex flex-col justify-center'>
             <h3 className='text-aeroBlue mb-4'>Stalward Prod Agency Ltd</h3>

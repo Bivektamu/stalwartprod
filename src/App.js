@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import Loading from "./components/Loading";
+import Loader from "./components/Loader";
 
 import "./App.css";
 import { Header } from "./components/Header";
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loader />}>
         <main>
           <Home />
         </main>
