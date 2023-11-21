@@ -1,18 +1,25 @@
-import React, { Suspense } from "react";
-import Loader from "./components/Loader";
-
+import React from "react";
+import { Hero } from './components/Hero'
+import { Plan } from './components/Plan'
+import Work from './components/Work'
+import Team from './components/Team'
+import { Contact } from './components/Contact'
+import { Footer } from './components/Footer'
 import "./App.css";
 import { Header } from "./components/Header";
-import { Home } from "./components/Home";
+import { Layout } from "./components/Layout";
 function App() {
   return (
     <>
       <Header />
-      <Suspense fallback={<Loader />}>
-        <main>
-          <Home />
-        </main>
-      </Suspense>
+        <Layout>
+          <Hero />
+          <Plan />
+          <Work />
+          <Team />
+          <Contact />
+        </Layout>
+        <Footer />
     </>
   );
 }

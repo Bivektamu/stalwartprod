@@ -4,7 +4,7 @@ import { RiComputerFill } from 'react-icons/ri'
 
 export const Hero = () => {
   return (
-    <section id="hero">
+    <section id="hero" className='active'>
         <div id="landing" className='w-full h-screen relative'>
           <img alt="" src='/images/hero.jpg' className='absolute top-0 left-0 w-full h-full object-cover' />
           <h1 className="absolute top-80 left-0 right-0 text-center">We're creatives</h1>
@@ -21,7 +21,7 @@ export const Hero = () => {
         </div>
 
         <div className="w-full ">
-          <div className="lg:container px-10 py-40 m-auto grid grid-cols-1 gap-y-14 lg:grid-cols-4 pt-10 grid gap-x-10">
+          <div className="lg:container px-10 py-40 m-auto grid grid-cols-1 gap-y-14 md:grid-cols-2 lg:grid-cols-4 pt-10 grid gap-x-10">
             <div className='text-center'>
               <AiFillBulb className='m-auto mb-6 text-2xl' />
               <h3 className='mb-3'>Concept</h3>
