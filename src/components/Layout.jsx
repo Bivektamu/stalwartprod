@@ -5,32 +5,35 @@ import React, { useState } from 'react'
 
 export const Layout = ({ children }) => {
 
-  window.onscroll = function () {
-    checkSection()
-    checkHeader()
-    if (boxes.length > 0) checkBoxes();
+  const [boxes, setB] = useState([])
 
-  }
 
-  let boxes = []
   window.onload = function () {
 
     //////////////////////////////////////////////////
+    let boxesArray = []
     for (var i = 0; i < document.getElementsByClassName("wow").length; i++) {
       var ele = document.getElementsByClassName("wow")[i];
       let offSet = 0.8;
       if (ele.getAttribute("data-offset"))
         offSet = parseFloat(ele.getAttribute("data-offset")).toFixed(2);
 
-        boxes.push({
+        boxesArray.push({
         ele: ele,
         animated: false,
         offSet: offSet,
       });
     }
 
-
+    setB(boxesArray)
     //////////////////////////////////////////////////
+  }
+
+  window.onscroll = function () {
+
+    checkSection()
+    checkHeader()
+    if (boxes.length > 0) checkBoxes();
   }
 
   function checkBoxes() {
@@ -41,8 +44,8 @@ export const Layout = ({ children }) => {
       if (totalInViewport(ele, b.offSet) && !b.animated) {
         boxes[k].animated = true;
         ele.classList.add("animated");
-        const b = boxes.filter(ele => ele != boxes[k])
-        boxes = b
+        const filtered_box = boxes.filter(ele => ele !== boxes[k])
+        setB(filtered_box)
       }
 
     }
