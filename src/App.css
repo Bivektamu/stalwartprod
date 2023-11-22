@@ -1,42 +1,23 @@
-.App {
-  text-align: center;
+body {
+  font-size: 16px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3 {
+font-family: 'Work Sans', sans-serif;
+font-weight: 500;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  box-shadow: 1px 0 1px rgba(0,0,0,.2);
 }
-
-.App-header {
-  background-color: #282c34;
+section {
   min-height: 100vh;
+  
+}
+#plan, #team, #contact {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 #loading {
   width: 100%;
   background: #f3f3f3;
@@ -68,5 +49,34 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+.wow {
+  visibility: hidden;
+}
+
+.wow.animated {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  visibility: visible;
+}
+.wow.animated.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
   }
 }
