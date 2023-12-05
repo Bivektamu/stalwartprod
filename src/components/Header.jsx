@@ -21,7 +21,7 @@ export const Header = () => {
    <header className={`flex justify-center py-10 fixed z-10 top-0 left-0 w-full transition-all duration-300`}>
     <div className="lg:container md:w-full flex px-10 justify-between items-center">
         <li  className='list-none cursor-pointer'>
-          <img onClick={(e)=> onClick(e)} linkto='hero' src='/images/logo-black.svg' alt="" width={100} />
+          <img onClick={(e)=> onClick(e)} linkto='hero' src='/images/logo.svg' alt="" width={100} />
         </li>
 
           <nav className='flex justify-start items-center gap-x-20 md:gap-x-10'>
