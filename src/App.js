@@ -8,12 +8,14 @@ import { Footer } from './components/Footer'
 import "./App.css";
 import { Header } from "./components/Header";
 import { Layout } from "./components/Layout";
+import { Services } from "./components/Services";
 function App() {
   return (
     <>
       <Header />
         <Layout>
           <Hero />
+          <Services />
           <Plan />
           <Work />
           <Team />

@@ -17,15 +17,18 @@ export const Layout = ({ children }) => {
   }, [])
 
   
-  useEffect(()=> {
-    if(!loading && boxes.length > 0)
-    document.addEventListener('scroll', onScroll)
+  // useEffect(()=> {
+  //   if(!loading && boxes.length > 0)
+  //   document.addEventListener('scroll', onScroll)
 
-    return(()=> {
-      document.addEventListener('scroll', onScroll)
-    }) 
-    // eslint-disable-next-line 
-  }, [loading])
+  //   return(()=> {
+  //     document.addEventListener('scroll', onScroll)
+  //   }) 
+  //   // eslint-disable-next-line 
+  // }, [loading])
+
+  document.addEventListener('scroll', onScroll)
+
 
     function lazyLoad() {
   
@@ -49,6 +52,9 @@ export const Layout = ({ children }) => {
 
 
   function onScroll() {
+    if(loading) {
+      return
+    }
 
     checkSection()
     checkHeader()

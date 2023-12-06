@@ -69,7 +69,7 @@ export const Contact = () => {
 
   return (
     <section id="contact" className=''>
-      <div className="lg:container m-auto xl:px-32 md:px-0 py-40">
+      <div className="xs:container m-auto  md:px-0 py-40">
         <h2 className='mb-4 md:px-10'>Contact Us</h2>
         <p className="text-sm mb-8 lg:w-2/5 md:px-10">Please contact us to compare and customize all the packages and get the best deal out of it.</p>
         <div className="grid lg:grid-cols-3 md:grid-cols-1 lg:gap-x-10 ">
@@ -107,7 +107,6 @@ export const Contact = () => {
                 </div>
 
                 <input type="submit" value="Submit" className='cursor-pointer list-none btn text-center bg-black text-white py-2 px-6 font-bold uppercase mt-4 w-32' />
-
 
               </form>
             </>

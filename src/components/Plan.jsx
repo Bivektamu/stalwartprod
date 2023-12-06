@@ -3,8 +3,8 @@ import React from 'react'
 
 export const Plan = () => {
   return (
-    <section id="plan" className="w-full px-10 py-40 bg-grey">
-      <div className="lg:container m-auto xl:px-10 md:px-4 text-center">
+    <section id="plan" className="w-full  bg-grey">
+      <div className="lg:container m-auto px-10 py-40 text-center">
         <h2 className='mb-10 wow fadeInUp'>A fantastic price</h2>
 
         <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-4 md:gap-x-12">
@@ -16,7 +16,7 @@ export const Plan = () => {
             <p className='leading-10 mb-6'>
               <span className="font-medium wow fadeInUp">6-8 Professional photos</span><br />
             </p>
-            <p className="leading-6 text-secondBlack wow fadeInUp delay-300">
+            <p className="leading-6 text-secondBlack text-xs wow fadeInUp delay-300">
               Virtual Staging, Furniture removal, Floorplans 2d, can be requested with extra&nbsp;charges
             </p>
             <a href='/pdf/Rate_card.pdf' target="_blank" className='cursor-pointer list-none btn bg-black text-white py-2 px-6 font-bold uppercase mt-4 inline-block wow fadeInUp absolute bottom-6 w-40 m-auto left-0 right-0'>Learn More</a>
@@ -32,7 +32,7 @@ export const Plan = () => {
               <span className="font-medium wow fadeInUp">2D floorplan(1-2 beds)</span>
             </p>
 
-            <p className="leading-6 text-secondBlack wow fadeInUp">No. of photos can be managed according to variable prices</p>
+            <p className="leading-6 text-secondBlack text-xs wow fadeInUp">No. of photos can be managed according to variable&nbsp;prices</p>
             <a href='/pdf/Rate_card.pdf' target="_blank" className='cursor-pointer list-none btn bg-black text-white py-2 px-6 font-bold uppercase mt-4 inline-block wow fadeInUp absolute bottom-6 w-40 m-auto left-0 right-0'>Learn More</a>
           </div>
 
@@ -45,7 +45,7 @@ export const Plan = () => {
               <span className="font-medium wow fadeInUp">Showcase video</span>
             </p>
 
-            <p className="leading-6 text-secondBlack wow fadeInUp">No. of photos, 3D floor plan, cinematic video, agent intro and 3D virtual tour can be done on extra cost.</p>
+            <p className="leading-6 text-secondBlack text-xs wow fadeInUp">No. of photos, 3D floor plan, cinematic video, agent intro and 3D virtual tour can be done on extra cost. Pleae check our rate card for various&nbsp;packages.</p>
             <a href='/pdf/Rate_card.pdf' target="_blank" className='cursor-pointer list-none btn bg-black text-white py-2 px-6 font-bold uppercase mt-4 inline-block wow fadeInUp absolute bottom-6 w-40 m-auto left-0 right-0'>Learn More</a>
           </div>
 
@@ -60,7 +60,7 @@ export const Plan = () => {
               <span className="font-medium wow fadeInUp">3D virtual tour</span>
             </p>
 
-            <p className="leading-6 text-secondBlack wow fadeInUp">Extras can be added which incur charges</p>
+            <p className="leading-6 text-secondBlack text-xs wow fadeInUp">Extras can be added which incur&nbsp;charges</p>
             <a href='/pdf/Rate_card.pdf' target="_blank" className='cursor-pointer list-none btn bg-black text-white py-2 px-6 font-bold uppercase mt-4 inline-block wow fadeInUp absolute bottom-6 w-40 m-auto left-0 right-0'>Learn More</a>
           </div>
         </div>
