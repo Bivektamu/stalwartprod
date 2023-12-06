@@ -107,7 +107,7 @@ section {
   visibility:visible;
 }
 .wow.animated {
-  background: red;
+  /* background: red; */
 }
 
 }
