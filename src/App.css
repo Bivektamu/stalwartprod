@@ -104,10 +104,11 @@ section {
 @media screen and (max-width: 760px) {
   
 .wow {
-  visibility:visible;
+  /* visibility:visible; */
 }
 .wow.animated {
   /* background: red; */
+  
 }
 
 }

@@ -8,54 +8,45 @@ export const Layout = ({ children }) => {
   const [boxes, setB] = useState([])
   const [loading, setL] = useState(true)
 
-  useEffect(()=> {
-    window.addEventListener('load', lazyLoad)
+  useEffect(() => {
 
-    return(()=> {
-      window.removeEventListener('load', lazyLoad)
-    }) 
-  }, [])
-
-  
-  // useEffect(()=> {
-  //   if(!loading && boxes.length > 0)
-  //   document.addEventListener('scroll', onScroll)
-
-  //   return(()=> {
-  //     document.addEventListener('scroll', onScroll)
-  //   }) 
-  //   // eslint-disable-next-line 
-  // }, [loading])
-
-  document.addEventListener('scroll', onScroll)
-
-
-    function lazyLoad() {
-  
+    if (boxes.length < 1 && document.getElementsByClassName("wow").length > 0) {
+      console.log('asdf')
       let boxesArray = []
       for (var i = 0; i < document.getElementsByClassName("wow").length; i++) {
         var ele = document.getElementsByClassName("wow")[i];
         let offSet = 0.8;
         if (ele.getAttribute("data-offset"))
           offSet = parseFloat(ele.getAttribute("data-offset")).toFixed(2);
-  
-          boxesArray.push({
+
+        boxesArray.push({
           ele: ele,
           animated: false,
           offSet: offSet,
         });
       }
-  
+
       setB(boxesArray)
       setL(false)
     }
+    // eslint-disable-next-line 
+  }, [])
+
+
+  useEffect(() => {
+    if (!loading)
+
+      window.addEventListener('scroll', onScroll)
+
+    return (() => {
+      window.addEventListener('scroll', onScroll)
+    })
+    // eslint-disable-next-line 
+  }, [loading])
+// 
 
 
   function onScroll() {
-    if(loading) {
-      return
-    }
-
     checkSection()
     checkHeader()
     if (boxes.length > 0) checkBoxes();
