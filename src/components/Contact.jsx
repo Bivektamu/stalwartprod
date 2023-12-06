@@ -71,7 +71,7 @@ export const Contact = () => {
     <section id="contact" className=''>
       <div className="lg:container m-auto xl:px-32 md:px-0 py-40">
         <h2 className='mb-4 md:px-10'>Contact Us</h2>
-        <p className="text-sm mb-8 lg:w-2/5 md:px-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie lacus in ante vestibulum, vitae aliquam felis feugiat. Nullam euismod risus.</p>
+        <p className="text-sm mb-8 lg:w-2/5 md:px-10">Please contact us to compare and customize all the packages and get the best deal out of it.</p>
         <div className="grid lg:grid-cols-3 md:grid-cols-1 lg:gap-x-10 ">
           {!success ? (
             <>
@@ -119,10 +119,10 @@ export const Contact = () => {
 
 
           <div className='py-16 px-8 bg-secondBlack text-center text-white flex flex-col justify-center md:w-full'>
-            <h3 className='text-aeroBlue mb-4'>Stalward Prod Agency Ltd</h3>
-            <p className='text-sm mb-8'>Adress 234,<br />address, NSW 2000</p>
-            <p className="text-sm">Mobile: <a href="tel:+0452424566">045 242 565</a></p>
-            <p className="text-sm">Email: <a href="mailto:info@info.com">info@info.com</a></p>
+            <h3 className='text-aeroBlue mb-4'>Stalwart Production House</h3>
+            <p className='text-sm mb-8'>Noble Street<br />Allawah, NSW 2218</p>
+            <p className="text-sm">Mobile: <a href="tel:+0452424566">0433 753 635</a></p>
+            <p className="text-sm">Email: <a href="mailto:info@stalwartprod.com.au">info@stalwartprod.com.au</a></p>
           </div>
         </div>
       </div>

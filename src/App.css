@@ -80,3 +80,23 @@ section {
     filter: blur(0);
   }
 }
+
+.close_btn {
+  position: absolute;
+}
+.close_btn:before, .close_btn:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 50%;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: #000;
+  transform: rotate(45deg);
+}
+.close_btn::after {
+  transform: rotate(-45deg);
+}

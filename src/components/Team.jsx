@@ -11,7 +11,7 @@ const Team = () => {
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-14">
           <div>
-            <img src="/images/07.jpg" alt="" className="w-full mb-2 wow fadeInUp" />
+            <img src="/images/avatar.jpg" alt="" className="w-full mb-2 wow fadeInUp" />
             <h4 className="mb-6 wow fadeInUp">Caroline Johnson</h4>
             <p className="text-sm mb-2 font-thin wow fadeInUp ">Photographer</p>
             <p className="flex gap-x-2 text-xl wow fadeInUp">
@@ -21,7 +21,7 @@ const Team = () => {
             </p>
           </div>
           <div>
-            <img src="/images/07.jpg" alt="" className="w-full mb-2 wow fadeInUp" />
+            <img src="/images/avatar.jpg" alt="" className="w-full mb-2 wow fadeInUp" />
             <h4 className="mb-6 wow fadeInUp">Caroline Johnson</h4>
             <p className="text-sm mb-2 font-thin wow fadeInUp ">Photographer</p>
             <p className="flex gap-x-2 text-xl wow fadeInUp">

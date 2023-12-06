@@ -6,48 +6,41 @@ import React, { useEffect, useState } from 'react'
 export const Layout = ({ children }) => {
 
   const [boxes, setB] = useState([])
-  const [loading, setL] = useState(true)
 
   useEffect(()=> {
-    window.addEventListener('load', lazyLoad)
-
-    return(()=> {
-      window.removeEventListener('load', lazyLoad)
-    }) 
-  }, [])
-
-  
-  useEffect(()=> {
-    if(!loading && boxes.length > 0)
-    window.addEventListener('scroll', onScroll)
-
-    return(()=> {
-      window.addEventListener('scroll', onScroll)
-    }) 
-  }, [!loading])
+    document.addEventListener('load', lazyLoad)
 
     function lazyLoad() {
-  
-      let boxesArray = []
-      for (var i = 0; i < document.getElementsByClassName("wow").length; i++) {
-        var ele = document.getElementsByClassName("wow")[i];
-        let offSet = 0.8;
-        if (ele.getAttribute("data-offset"))
-          offSet = parseFloat(ele.getAttribute("data-offset")).toFixed(2);
-  
-          boxesArray.push({
-          ele: ele,
-          animated: false,
-          offSet: offSet,
-        });
-      }
-  
-      setB(boxesArray)
-      setL(false)
+      
+    }
+    return(()=> {
+
+    }) 
+  })
+
+
+  window.onload = function () {
+
+    //////////////////////////////////////////////////
+    let boxesArray = []
+    for (var i = 0; i < document.getElementsByClassName("wow").length; i++) {
+      var ele = document.getElementsByClassName("wow")[i];
+      let offSet = 0.8;
+      if (ele.getAttribute("data-offset"))
+        offSet = parseFloat(ele.getAttribute("data-offset")).toFixed(2);
+
+        boxesArray.push({
+        ele: ele,
+        animated: false,
+        offSet: offSet,
+      });
     }
 
+    setB(boxesArray)
+    //////////////////////////////////////////////////
+  }
 
-  function onScroll() {
+  window.onscroll = function () {
 
     checkSection()
     checkHeader()

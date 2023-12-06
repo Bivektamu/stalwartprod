@@ -269,8 +269,8 @@ import React, { useState } from 'react'
           </div>
         </div>
         {show && (
-          <div id="popup-library" className='fixed top-0 z-10 left-0 w-full h-full bg-black/[.2] flex items-center justify-center px-10 py-20'>
-            <span onClick={()=> setS(false)} className="cursor-pointer absolute top-4 left-0 right-0 m-auto bg-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-medium">x</span>
+          <div id="popup-library" className='fixed top-0 z-10 left-0 w-full h-full bg-black/[.4] flex items-center justify-center px-10 py-20'>
+            <span onClick={()=> setS(false)} className="cursor-pointer absolute top-4 left-0 right-0 m-auto bg-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-medium close_btn"></span>
             <img src={src} className='max-h-full max-w-full' alt="" />
           </div>
         )}
