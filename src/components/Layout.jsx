@@ -19,12 +19,13 @@ export const Layout = ({ children }) => {
   
   useEffect(()=> {
     if(!loading && boxes.length > 0)
-    window.addEventListener('scroll', onScroll)
+    document.addEventListener('scroll', onScroll)
 
     return(()=> {
-      window.addEventListener('scroll', onScroll)
+      document.addEventListener('scroll', onScroll)
     }) 
-  }, [!loading])
+    // eslint-disable-next-line 
+  }, [loading])
 
     function lazyLoad() {
   
@@ -117,7 +118,7 @@ export const Layout = ({ children }) => {
     }
   }
   return (
-    <main>
+    <main >
       {children}
     </main>
   )
