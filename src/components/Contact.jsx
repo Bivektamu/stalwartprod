@@ -70,8 +70,12 @@ export const Contact = () => {
   return (
     <section id="contact" className=''>
       <div className="xs:container m-auto  md:px-0 py-40">
-        <h2 className='mb-4 md:px-10'>Contact Us</h2>
-        <p className="text-sm mb-8 lg:w-2/5 md:px-10">Please contact us to compare and customize all the packages and get the best deal out of it.</p>
+        {!success && (
+          <>
+            <h2 className='mb-4 md:px-10'>Contact Us</h2>
+            <p className="text-sm mb-8 lg:w-2/5 md:px-10">Please contact us to compare and customize all the packages and get the best deal out of it.</p></>
+        )}
+
         <div className="grid lg:grid-cols-3 md:grid-cols-1 lg:gap-x-10 ">
           {!success ? (
             <>

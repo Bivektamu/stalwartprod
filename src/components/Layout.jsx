@@ -11,7 +11,6 @@ export const Layout = ({ children }) => {
   useEffect(() => {
 
     if (boxes.length < 1 && document.getElementsByClassName("wow").length > 0) {
-      console.log('asdf')
       let boxesArray = []
       for (var i = 0; i < document.getElementsByClassName("wow").length; i++) {
         var ele = document.getElementsByClassName("wow")[i];

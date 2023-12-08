@@ -11,7 +11,7 @@ header {
   box-shadow: 1px 0 1px rgba(0,0,0,.2);
 }
 section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   
 }
 #plan, #team, #contact {
@@ -102,13 +102,7 @@ section {
 }
 
 @media screen and (max-width: 760px) {
-  
-.wow {
-  /* visibility:visible; */
-}
-.wow.animated {
-  /* background: red; */
-  
-}
-
+  body {
+    font-size: 14px;
+  }
 }

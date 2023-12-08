@@ -4,14 +4,12 @@ import React from 'react'
 export const Plan = () => {
   return (
     <section id="plan" className="w-full  bg-grey">
-      <div className="lg:container m-auto px-10 py-40 text-center">
-        <h2 className='mb-10 wow fadeInUp'>A fantastic price</h2>
-
-        <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-4 md:gap-x-12">
-
+      <div className="lg:container m-auto px-4 md:px-10 py-20 md:py-40 text-center">
+        <h2 className='mb-10 wow fadeInUp text-2xl md:text-4xl'>A fantastic price</h2>
+        <div className="grid grid-cols-1 gap-y-4 md:gap-y-12 md:grid-cols-2 xl:grid-cols-4 md:gap-x-12">
           <div className='bg-white px-6 relative pt-6 pb-24 hover:bg-aeroBlue hover:shadow-black hover:shadow-2xl transition-all ease-in duration-200 group border-b-8 hover:border-black border-grey wow fadeInUp'>
-            <h3 className='wow fadeInUp mb-8'>Bronze</h3>
-            <h4 className="mb-4 wow fadeInUp">Rental Package<br />
+            <h3 className='text-base md:text-xl wow fadeInUp mb-4 md:mb-8'>Bronze</h3>
+            <h4 className="text-base md:text-xl mb-4 wow fadeInUp">Rental Package<br />
               $ 185</h4>
             <p className='leading-10 mb-6'>
               <span className="font-medium wow fadeInUp">6-8 Professional photos</span><br />
@@ -23,8 +21,8 @@ export const Plan = () => {
           </div>
 
           <div className='bg-white px-6 relative pt-6 pb-24 hover:bg-aeroBlue hover:shadow-black hover:shadow-2xl transition-all ease-in duration-200 group border-b-8 hover:border-black border-grey wow fadeInUp'>
-            <h3 className='wow fadeInUp mb-8'>Silver</h3>
-            <h4 className="mb-4 wow fadeInUp">Photography Package<br />$ 525</h4>
+            <h3 className='text-base md:text-xl wow fadeInUp mb-4 md:mb-8'>Silver</h3>
+            <h4 className="text-base md:text-xl mb-4 wow fadeInUp">Photography Package<br />$ 525</h4>
             <p className='leading-10 mb-6'>
               <span className="font-medium wow fadeInUp">8 Professional photos</span><br />
               <span className="font-medium wow fadeInUp">2 drone shots with pin</span><br />
@@ -37,8 +35,8 @@ export const Plan = () => {
           </div>
 
           <div className='bg-white px-6 relative pt-6 pb-24 hover:bg-aeroBlue hover:shadow-black hover:shadow-2xl transition-all ease-in duration-200 group border-b-8 hover:border-black border-grey wow fadeInUp'>
-            <h3 className='wow fadeInUp mb-8'>Gold</h3>
-            <h4 className="mb-4 wow fadeInUp">Photo/Video Package<br />$ 625</h4>
+            <h3 className='text-base md:text-xl wow fadeInUp mb-4 md:mb-8'>Gold</h3>
+            <h4 className="text-base md:text-xl mb-4 wow fadeInUp">Photo/Video Package<br />$ 625</h4>
             <p className='leading-10 mb-6'>
               <span className="font-medium wow fadeInUp">12 Professional photos</span><br />
               <span className="font-medium wow fadeInUp">2D floorplan(1-2 beds)</span><br />
@@ -50,8 +48,8 @@ export const Plan = () => {
           </div>
 
           <div className='bg-white px-6 relative pt-6 pb-24 hover:bg-aeroBlue hover:shadow-black hover:shadow-2xl transition-all ease-in duration-200 group border-b-8 hover:border-black border-grey wow fadeInUp'>
-            <h3 className='wow fadeInUp mb-8'>Platinum</h3>
-            <h4 className="mb-4 wow fadeInUp">Photo/Video Package<br />$ 1185</h4>
+            <h3 className='text-base md:text-xl wow fadeInUp mb-4 md:mb-8'>Platinum</h3>
+            <h4 className="text-base md:text-xl mb-4 wow fadeInUp">Photo/Video Package<br />$ 1185</h4>
             <p className='leading-10 mb-6'>
               <span className="font-medium wow fadeInUp">12 Professional photos</span><br />
               <span className="font-medium wow fadeInUp">2D floorplan(1-2 beds)</span><br />
