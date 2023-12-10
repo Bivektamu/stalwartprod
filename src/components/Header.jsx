@@ -28,7 +28,7 @@ export const Header = () => {
           <li onClick={(e) => onClick(e)} linkto='services' className='uppercase cursor-pointer tracking-wider list-none' >Services</li>
           <li onClick={(e) => onClick(e)} linkto='plan' className='uppercase cursor-pointer tracking-wider list-none'>plan</li>
           <li onClick={(e) => onClick(e)} linkto='work' className='uppercase cursor-pointer tracking-wider list-none'>work</li>
-          <li onClick={(e) => onClick(e)} linkto='team' className='uppercase cursor-pointer tracking-wider list-none'>team</li>
+          {/* <li onClick={(e) => onClick(e)} linkto='team' className='uppercase cursor-pointer tracking-wider list-none'>team</li> */}
           <li onClick={(e) => onClick(e)} linkto='contact' className='uppercase cursor-pointer tracking-wider list-none'>contact</li>
         </nav>
 

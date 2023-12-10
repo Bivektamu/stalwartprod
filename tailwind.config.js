@@ -14,6 +14,9 @@ module.exports = {
         'aeroBlue': '#d7f7e3',
         'overlay': 'rgba(0,0,0,0.3)',
       },
+      gridTemplateColumns: {
+        '1fr': '1fr',
+      },
       animation: {
         'fadeInUp':'fade 0.6s ease-in'
       },

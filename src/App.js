@@ -2,7 +2,7 @@ import React from "react";
 import { Hero } from './components/Hero'
 import { Plan } from './components/Plan'
 import Work from './components/Work'
-import Team from './components/Team'
+// import Team from './components/Team'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import "./App.css";
@@ -18,7 +18,7 @@ function App() {
           <Services />
           <Plan />
           <Work />
-          <Team />
+          {/* <Team /> */}
           <Contact />
         </Layout>
         <Footer />

@@ -57,6 +57,7 @@ export const Contact = () => {
       }
     }
 
+
   }
 
   function onCaptchaChange(e) {
@@ -66,20 +67,19 @@ export const Contact = () => {
   }
 
   return (
-    <section id="contact" className='bg-aeroBlue lg:bg-white'>
-      <div className="xs:container m-auto  md:px-0 pt-20 md:pt-40 lg:py-40">
+    <section id="contact" className='bg-aeroBlue lg:bg-white px-4'>
+      <div className="xs:container m-auto  md:px-0 py-20 md:py-40">
         {!success && (
           <>
-            <h2 className='mb-4 px-4 md:px-10 text-2xl md:text-4xl '>Contact Us</h2>
-            <p className="text-sm mb-8 lg:w-2/5 px-4 md:px-10">Please contact us to compare and customize all the packages and get the best deal out of it.</p>
-          </>
+            <h2 className='mb-4 md:px-10 text-2xl md:text-4xl'>Contact Us</h2>
+            <p className="text-sm mb-8 lg:w-2/5 md:px-10">Please contact us to compare and customize all the packages and get the best deal out of it.</p></>
         )}
 
         <div className="grid lg:grid-cols-3 md:grid-cols-1 lg:gap-x-10 ">
           {!success ? (
             <>
 
-              <form onSubmit={(e) => onSubmit(e)} className='bg-aeroBlue md:col-span-2  md:px-8 py-8 md:py-16  grid grid-cols-1  md:grid-cols-2 md:gap-x-10 gap-y-10 relative px-4 md:px-0'>
+              <form onSubmit={(e) => onSubmit(e)} className='bg-aeroBlue md:col-span-2  md:px-8 md:py-16  grid grid-cols-1  grid-rows-5 md:grid-cols-2 md:gap-x-10 gap-y-10 relative'>
                 {loading && (<Loader />)}
 
                 <input value={firstName} required type='text' name='firstName' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='First Name*' onChange={e => onChange(e)} />
@@ -102,7 +102,7 @@ export const Contact = () => {
                   <option value="googleSearch" className=''>Google Search</option>
                 </select>
 
-                <div className="md:col-span-2">
+                <div className="col-span-2">
                   <ReCAPTCHA
                     sitekey={process.env.REACT_APP_SITE_KEY}
                     onChange={e => onCaptchaChange(e)}
@@ -114,8 +114,8 @@ export const Contact = () => {
               </form>
             </>
           ) : (
-            <div className="md:col-span-2 pl-10 bg-aeroBlue pr-8 pb-20 lg:pb-0 flex justify-center items-center">
-              <h3 className="w-full  text-center">Thank you for your interest in Stalwart Production House.<br /> We will be in touch soon.</h3>
+            <div className="col-span-2  pr-8 py-16 gap-x-10 gap-y-10">
+              <h3 className="w-full">Thank yoy for your interest in Stalward Prod Agency.<br /> We will be in touch soon.</h3>
             </div>
           )}
 
