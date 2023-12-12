@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react'
 import Privacy from './Privacy'
 import Disclaimer from './Disclaimer'
 export const Footer = () => {
-  const [show, setS] = useState(true)
-  const [clickedBtn, setCB] = useState('privacy')
+  const [show, setS] = useState(false)
+  const [clickedBtn, setCB] = useState()
 
   useEffect(() => {
     console.log(clickedBtn)
