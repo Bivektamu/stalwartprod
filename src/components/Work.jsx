@@ -20,115 +20,115 @@ const Work = () => {
           <div onClick={e => openGallery(e)} className='lg:row-span-2 xl:row-span-1 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/1.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 lg:w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className=" lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className=" lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/2.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='lg:row-span-1 xl:row-span-2 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/3.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/4.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='lg:row-span-2 xl:row-span-1 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/5.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='xl:col-span-2 lg:col-span-1 xl:row-span-2 lg:row-span-1 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/6.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div onClick={e => openGallery(e)} className='lg:row-span-2 xl:row-span-1 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/7.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/8.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div onClick={e => openGallery(e)} className='relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/9.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='lg:col-span-1 xl:col-span-2 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/10.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='lg:row-span-2 xl:row-span-1 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/11.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 lg:w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-black lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
+              {/* <h5 className="lg:text-black lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
               <div>
                 <h4 className='lg:text-white text-left mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
@@ -139,130 +139,130 @@ const Work = () => {
           <div onClick={e => openGallery(e)} className='relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/12.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='lg:row-span-2 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/13.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/14.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/15.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='lg:col-span-1 lg:row-span-1 xl:col-span-2 xl:row-span-2 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/16.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div onClick={e => openGallery(e)} className='row-span-2 xl:row-span-1 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/17.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/18.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='row-span-2 xl:row-span-1 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/19.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='xl:col-span-2 lg:col-span-1 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/20.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='xl:col-span-2 xl:row-span-2 relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/21.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div onClick={e => openGallery(e)} className='relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/22.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div onClick={e => openGallery(e)} className='relative cursor-pointer popup-gallery wow fadeInUp group overflow-hidden'>
             <img src="/images/23.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400 lg:scale-y-75 group-hover:scale-y-100 origin-bottom ">
-              <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5>
-              <div>
+              {/* <h5 className="lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
+              {/* <div>
                 <h4 className='lg:text-white  text-left mt-4 lg:mt-0 mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
