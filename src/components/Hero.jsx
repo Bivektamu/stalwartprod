@@ -1,10 +1,31 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 export const Hero = () => {
+  const ref = useRef(null)
+
+  useEffect(() => {
+    window.addEventListener('scroll', parallax)
+    return (() => {
+      window.removeEventListener('scroll', parallax)
+    })
+  }, [])
+
+  function parallax() {
+    const s = window.scrollY,
+      h = window.innerHeight
+    if (s <= window.innerHeight) {
+      const m = 200 / h
+      const  y = (m * s)
+      console.log(ref.current)
+
+      ref.current.style.transform = `translateY(${y}px)`
+      // y = mx + b
+    }
+  }
   return (
     <>
-      <div id="landing" className='w-full h-screen relative '>
-        <img alt="" src='/images/hero.jpg' className='absolute top-0 left-0 w-full h-full object-cover' />
+      <div id="landing" className='w-full h-screen relative overflow-hidden'>
+        <img alt="" ref={ref} src='/images/hero.jpg' className='absolute top-0 left-0 w-full h-full object-cover object-bottom' />
 
         <div className="absolute top-80 left-0 right-0 text-center px-4">
           <h1 className="text-black text-4xl md:text-6xl mb-8">Concept to Completion</h1>

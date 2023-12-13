@@ -2,7 +2,7 @@ import React  from "react";
 
 const Disclaimer = () => {
   return (
-    <div id="disclaimer">
+    <div id="disclaimer" className="lg:container m-auto md:px-10 pt-10">
       <h2 className="mb-8">Disclaimer</h2>
       <h3 className="mb-4">Consent and Release</h3>
       <p className="mb-8">
