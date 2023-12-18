@@ -11,6 +11,7 @@ export const Contact = () => {
     mobile: '',
     email: '',
     howDidYouHearAboutUs: '',
+    message: '',
     interestedIn: '',
     _gotcha: ''
   })
@@ -18,7 +19,7 @@ export const Contact = () => {
   const [success, setSuccess] = useState(false)
   const [loading, setLoading] = useState(false)
   const [captchaCheck, setCaptchaCheck] = useState(false)
-  const { firstName, lastName, mobile, email, howDidYouHearAboutUs, interestedIn } = formData
+  const { firstName, lastName, mobile, email, howDidYouHearAboutUs, message, interestedIn } = formData
   const onChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
@@ -88,12 +89,15 @@ export const Contact = () => {
                 <input value={email} required type='email' name='email' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Email*' onChange={e => onChange(e)} />
                 <select name="interestedIn" value={interestedIn} onChange={e => onChange(e)} required placeholder='Interested In' id="interestedIn" className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
                   <option value="" hidden className=''>Interested In</option>
-                  <option value="realEstate" className='py-2'>Real Estate Advertisment</option>
-                  <option value="film" className=''>Fim Making</option>
-                  <option value="silver" className=''>Silver Plan</option>
-                  <option value="gold" className=''>Gold Plan</option>
-                  <option value="diamond" className=''>Diamond Plan</option>
+                  <option value="rental" className='py-2'>Rental Package</option>
+                  <option value="photography" className=''>Basic Photography Package</option>
+                  <option value="photo_video" className=''>Photo / Video Package</option>
+                  <option value="corporate" className=''>Corporate Headshots</option>
+                  <option value="corporate_commerical_media" className=''>Corporate / Commercial Media</option>
+                  <option value="ads" className=''>Ads</option>
+                  <option value="evetns_weddings" className=''>Events & Weddings</option>
                 </select>
+                
                 <select name="howDidYouHearAboutUs" value={howDidYouHearAboutUs} onChange={e => onChange(e)} required placeholder='How Did You Hear About Us' id="howDidYouHearAboutUs" className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
                   <option value="" hidden className=''>How Did You Hear About Us</option>
                   <option value="wordOfMouth" className='py-2'>Word Of Mouth</option>
@@ -101,6 +105,8 @@ export const Contact = () => {
                   <option value="googleAds" className=''>Google Ads</option>
                   <option value="googleSearch" className=''>Google Search</option>
                 </select>
+
+                <textarea name="message" id="message"  className='w-full h-32 md:col-span-2 py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Message' onChange={e => onChange(e)}>{message}</textarea>
 
                 <div className="md:col-span-2">
                   <ReCAPTCHA

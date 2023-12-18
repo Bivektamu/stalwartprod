@@ -31,13 +31,13 @@ export const Services = () => {
             <div className='text-center'>
               <RiComputerFill data-offset='0.7' className='m-auto mb-6 text-2xl wow fadeInUp' />
               <h3 data-offset='0.7' className='wow fadeInUp mb-3 text-base md:text-xl'>Business and product promotion&nbsp;ads</h3>
-              <p data-offset='0.7' className='wow fadeInUp'>We pioneer in supplying the best photography / videography services for your corporate ads which will provde that extra tick for your&nbsp;listings.</p>
+              <p data-offset='0.7' className='wow fadeInUp'>We pioneer in supplying the best photography / videography services for your corporate ads which will provide that extra tick for your&nbsp;listings.</p>
             </div>
 
             <div className='text-center'>
               <AiFillCamera data-offset='0.65' className='m-auto mb-6 text-2xl wow fadeInUp' />
-              <h3 data-offset='0.65' className='wow fadeInUp mb-3 text-base md:text-xl'>Virtual Tours and<br />360°&nbsp;medias</h3>
-              <p data-offset='0.65' className='wow fadeInUp'>Immerse potential buyers in virtual tours and 360° medias to showcase properties like never&nbsp;before.</p>
+              <h3 data-offset='0.65' className='wow fadeInUp mb-3 text-base md:text-xl'>Events and weddings</h3>
+              <p data-offset='0.65' className='wow fadeInUp'>Transforming moments into memories –  We specialize in capturing the essence of weddings and events with creative excellence.</p>
             </div>
           </div>
         </div>

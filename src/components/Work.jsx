@@ -129,10 +129,10 @@ const Work = () => {
             <img src="/images/11.jpg" alt="" className="w-full lg:h-full lg:object-cover group-hover:scale-110 transition-all ease-in duration-500" />
             <div className="lg:absolute pt-4 lg:pt-0 top-0 left-0 lg:w-full lg:h-full bg-white lg:bg-overlay lg:p-10 flex justify-between flex-col group-hover:opacity-100 lg:opacity-0 transition-all ease-in duration-400  group-hover:scale-y-100 origin-bottom ">
               {/* <h5 className="lg:text-black lg:text-secondWhite text-left uppercase text-sm tracking-wider lg:-translate-x-5 group-hover:translate-x-0 transition-all ease-in duration-400 delay-500 group-hover:opacity-100 lg:opacity-0">Photography + Video</h5> */}
-              <div>
+              {/* <div>
                 <h4 className='lg:text-white text-left mb-2 font-medium transition-all ease-in duration-400 delay-200 group-hover:opacity-100 lg:opacity-0'>Land of God</h4>
                 <p className='lg:text-secondWhite text-left text-sm transition-all ease-in duration-400 delay-300 group-hover:opacity-100 lg:opacity-0'>We bring ideas to live. Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
