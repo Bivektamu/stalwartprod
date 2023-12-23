@@ -80,10 +80,10 @@ export const Layout = ({ children }) => {
   function checkHeader() {
     if (window.scrollY > 100) {
       document.querySelector('header').classList.remove('py-10')
-      document.querySelector('header').classList.add('bg-white', 'py-5')
+      document.querySelector('header').classList.add('bg-white', 'py-2','md:py-5')
     }
     else {
-      document.querySelector('header').classList.remove('bg-white', 'py-5')
+      document.querySelector('header').classList.remove('bg-white', 'py-2','md:py-5')
       document.querySelector('header').classList.add('py-10')
     }
   }
@@ -95,7 +95,12 @@ export const Layout = ({ children }) => {
     const secList = document.querySelectorAll('section'),
       menuList = document.querySelectorAll("nav > li");
 
-    const isActive = (activeSec.getBoundingClientRect().top <= document.querySelector('header').clientHeight && activeSec.getBoundingClientRect().bottom > 0) ? true : false
+
+      console.log(secList[1].getBoundingClientRect().bottom)
+      const hH = document.querySelector('header').clientHeight
+
+    const isActive = (activeSec.getBoundingClientRect().top <= document.querySelector('header').clientHeight && activeSec.getBoundingClientRect().bottom > hH) ? true : false
+    // console.log(activeSec.getBoundingClientRect().bottom)
     if (isActive) {
       return
     }
@@ -103,7 +108,7 @@ export const Layout = ({ children }) => {
     for (let i = 0; i < secList.length; i++) {
       const t = secList[i].getBoundingClientRect().top,
         b = secList[i].getBoundingClientRect().bottom;
-      if (t <= document.querySelector('header').clientHeight && b > 0) {
+      if (t <= hH && b > hH) {
         activeSec.classList.remove('active')
         activeMenuItem.classList.remove('active', 'font-medium')
 

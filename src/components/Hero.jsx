@@ -16,7 +16,6 @@ export const Hero = () => {
     if (s <= window.innerHeight) {
       const m = 200 / h
       const  y = (m * s)
-      console.log(ref.current)
 
       ref.current.style.transform = `translateY(${y}px)`
       // y = mx + b
