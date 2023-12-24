@@ -78,7 +78,7 @@ export const Contact = () => {
           {!success ? (
             <>
 
-              <form netlify onSubmit={(e) => onSubmit(e)} className='bg-aeroBlue md:col-span-2  md:px-8 py-8 md:py-16  grid grid-cols-1  md:grid-cols-2 md:gap-x-10 gap-y-10 relative px-4 md:px-0'>
+              <form data-netlify="true" netlify onSubmit={(e) => onSubmit(e)} className='bg-aeroBlue md:col-span-2  md:px-8 py-8 md:py-16  grid grid-cols-1  md:grid-cols-2 md:gap-x-10 gap-y-10 relative px-4 md:px-0'>
                 {loading && (<Loader />)}
 
                 <input value={firstName} required type='text' name='firstName' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='First Name*' onChange={e => onChange(e)} />
