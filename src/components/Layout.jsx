@@ -96,7 +96,6 @@ export const Layout = ({ children }) => {
       menuList = document.querySelectorAll("nav > li");
 
 
-      console.log(secList[1].getBoundingClientRect().bottom)
       const hH = document.querySelector('header').clientHeight
 
     const isActive = (activeSec.getBoundingClientRect().top <= document.querySelector('header').clientHeight && activeSec.getBoundingClientRect().bottom > hH) ? true : false

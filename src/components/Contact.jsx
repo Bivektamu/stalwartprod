@@ -12,13 +12,12 @@ export const Contact = () => {
     email: '',
     howDidYouHearAboutUs: '',
     message: '',
-    interestedIn: '',
-    _gotcha: ''
+    interestedIn: ''
   })
 
   const [success, setSuccess] = useState(false)
   const [loading, setLoading] = useState(false)
-  const [captchaCheck, setCaptchaCheck] = useState(false)
+  const [captchaCheck, setCaptchaCheck] = useState(null)
   const { firstName, lastName, mobile, email, howDidYouHearAboutUs, message, interestedIn } = formData
   const onChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -28,19 +27,18 @@ export const Contact = () => {
     e.preventDefault()
 
     if (!captchaCheck) {
-      return (<p>Please confirm you are not a robot</p>)
+      return setCaptchaCheck(false)
     }
 
     setLoading(true)
 
 
+    // info@stalwartprod.com.au
     try {
-      const res = await fetch("https://public.herotofu.com/v1/fe550930-81ba-11ee-97b0-f5224e9a6b83", {
+      const res = await fetch("/", {
         method: 'POST',
-        cache: "no-cache",
-
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
       })
 
       if (res && res.status === 200) {
@@ -80,12 +78,12 @@ export const Contact = () => {
           {!success ? (
             <>
 
-              <form onSubmit={(e) => onSubmit(e)} className='bg-aeroBlue md:col-span-2  md:px-8 py-8 md:py-16  grid grid-cols-1  md:grid-cols-2 md:gap-x-10 gap-y-10 relative px-4 md:px-0'>
+              <form netlify onSubmit={(e) => onSubmit(e)} className='bg-aeroBlue md:col-span-2  md:px-8 py-8 md:py-16  grid grid-cols-1  md:grid-cols-2 md:gap-x-10 gap-y-10 relative px-4 md:px-0'>
                 {loading && (<Loader />)}
 
                 <input value={firstName} required type='text' name='firstName' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='First Name*' onChange={e => onChange(e)} />
                 <input value={lastName} required type='text' name='lastName' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black ' placeholder='Last Name*' onChange={e => onChange(e)} />
-                <input value={mobile} required type='tel' name='mobile' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Mobile*' onChange={e => onChange(e)} />
+                <input value={mobile} required type='tel' name='mobile' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Mobile*'pattern='[0-9]{10}' onChange={e => onChange(e)} />
                 <input value={email} required type='email' name='email' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Email*' onChange={e => onChange(e)} />
                 <select name="interestedIn" value={interestedIn} onChange={e => onChange(e)} required placeholder='Interested In' id="interestedIn" className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
                   <option value="" hidden className=''>Interested In</option>
@@ -106,13 +104,14 @@ export const Contact = () => {
                   <option value="googleSearch" className=''>Google Search</option>
                 </select>
 
-                <textarea name="message" id="message"  className='w-full h-32 md:col-span-2 py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Message' onChange={e => onChange(e)}>{message}</textarea>
+                <textarea name="message" id="message"  className='w-full h-32 md:col-span-2 py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Message' onChange={e => onChange(e)} value={message} />
 
                 <div className="md:col-span-2">
                   <ReCAPTCHA
                     sitekey={process.env.REACT_APP_SITE_KEY}
                     onChange={e => onCaptchaChange(e)}
                   />
+                  {captchaCheck === false && <p className='text-xs text-red-500 mt-2'>Please confirm you are not a robot</p>}
                 </div>
 
                 <input type="submit" value="Submit" className='cursor-pointer list-none btn text-center bg-black text-white py-2 px-6 font-bold uppercase mt-4 w-32' />
