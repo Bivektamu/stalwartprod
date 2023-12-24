@@ -12,7 +12,8 @@ export const Contact = () => {
     email: '',
     howDidYouHearAboutUs: '',
     message: '',
-    interestedIn: ''
+    interestedIn: '',
+    _gotcha: ''
   })
 
   const [success, setSuccess] = useState(false)
@@ -32,48 +33,36 @@ export const Contact = () => {
 
     setLoading(true)
 
+    // 
+    try {
+      const res = await fetch("https://public.herotofu.com/v1/fe550930-81ba-11ee-97b0-f5224e9a6b83", {
+        method: 'POST',
+        // mode: 'no-cors',
+        cache: "no-cache",
 
-    // info@stalwartprod.com.au
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      })
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => {
+      if (res && res.status === 200) {
         setSuccess(true)
         setLoading(false)
 
-      })
-      .catch((error) => alert(error));
+      }
+      else {
+        throw new Error('Error')
+      }
+    }
 
-    // try {
-
-    //   const res = await fetch("https://stalwartprod.netlify.app/", {
-
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    //     body: new URLSearchParams(formData).toString(),
-    //   })
-    //   if(res) {
-    //     console.log(res)
-    //     return
-    //   }
-
-    //   if (res && res.status === 200) {
-    //     setSuccess(true)
-    //   }
-    //   else {
-    //     throw new Error('Error')
-    //   }
-    // }
-
-    // catch (error) {
-    //   if (error) {
-    //     console.log(error)
-    //     console.log(error.message)
-    //   }
-    // }
+    catch (error) {
+      if (error) {
+        console.log(error.message)
+        if(error.message === 'Failed to fetch') {
+        setSuccess(true)
+        setLoading(false)
+        }
+      }
+    }
 
   }
 
@@ -97,12 +86,12 @@ export const Contact = () => {
           {!success ? (
             <>
 
-              <form data-netlify="true" netlify onSubmit={(e) => onSubmit(e)} className='bg-aeroBlue md:col-span-2  md:px-8 py-8 md:py-16  grid grid-cols-1  md:grid-cols-2 md:gap-x-10 gap-y-10 relative px-4 md:px-0'>
+              <form onSubmit={(e) => onSubmit(e)} className='bg-aeroBlue md:col-span-2  md:px-8 py-8 md:py-16  grid grid-cols-1  md:grid-cols-2 md:gap-x-10 gap-y-10 relative px-4 md:px-0'>
                 {loading && (<Loader />)}
 
                 <input value={firstName} required type='text' name='firstName' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='First Name*' onChange={e => onChange(e)} />
                 <input value={lastName} required type='text' name='lastName' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black ' placeholder='Last Name*' onChange={e => onChange(e)} />
-                <input value={mobile} required type='tel' name='mobile' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Mobile*' pattern='[0-9]{10}' onChange={e => onChange(e)} />
+                <input value={mobile} required type='tel' name='mobile' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Mobile*'pattern='[0-9]{10}' onChange={e => onChange(e)} />
                 <input value={email} required type='email' name='email' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Email*' onChange={e => onChange(e)} />
                 <select name="interestedIn" value={interestedIn} onChange={e => onChange(e)} required placeholder='Interested In' id="interestedIn" className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
                   <option value="" hidden className=''>Interested In</option>
@@ -114,7 +103,7 @@ export const Contact = () => {
                   <option value="ads" className=''>Ads</option>
                   <option value="evetns_weddings" className=''>Events & Weddings</option>
                 </select>
-
+                
                 <select name="howDidYouHearAboutUs" value={howDidYouHearAboutUs} onChange={e => onChange(e)} required placeholder='How Did You Hear About Us' id="howDidYouHearAboutUs" className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
                   <option value="" hidden className=''>How Did You Hear About Us</option>
                   <option value="wordOfMouth" className='py-2'>Word Of Mouth</option>
@@ -123,7 +112,7 @@ export const Contact = () => {
                   <option value="googleSearch" className=''>Google Search</option>
                 </select>
 
-                <textarea name="message" id="message" className='w-full h-32 md:col-span-2 py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Message' onChange={e => onChange(e)} value={message} />
+                <textarea name="message" id="message"  className='w-full h-32 md:col-span-2 py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Message' onChange={e => onChange(e)} value={message} />
 
                 <div className="md:col-span-2">
                   <ReCAPTCHA
@@ -147,7 +136,7 @@ export const Contact = () => {
           <div className='py-16 px-8 bg-secondBlack text-center text-white flex flex-col justify-center md:w-full'>
             <h3 className='text-aeroBlue mb-4'>Stalwart Production House</h3>
             <p className='text-sm mb-8'>Noble Street<br />Allawah, NSW 2218</p>
-            <p className="text-sm">Mobile: <a href="tel:+0452424566">0433 753 635</a></p>
+            <p className="text-sm">Mobile: <a href="tel:0433753635">0433 753 635</a></p>
             <p className="text-sm">Email: <a href="mailto:info@stalwartprod.com.au">info@stalwartprod.com.au</a></p>
           </div>
         </div>
