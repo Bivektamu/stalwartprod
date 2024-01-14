@@ -1,17 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 
 export const Hero = () => {
   const parallaxRef = useRef(null)
   const heroRefs = useRef([])
 
-  const [animate, setAnimate] = useState(0)
- 
   useEffect(() => {
-    console.log(heroRefs)
-    let timer = 500
-    // setTimeout(()=> {
       parallaxRef.current.style.transform = `scale(1)`
-    // }, 200)
 
   
     if(window.scrollY === 0) {
