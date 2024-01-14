@@ -79,12 +79,12 @@ export const Layout = ({ children }) => {
 
   function checkHeader() {
     if (window.scrollY > 100) {
-      document.querySelector('header').classList.remove('py-10')
-      document.querySelector('header').classList.add('bg-white', 'py-2','md:py-5')
+      document.querySelector('header').classList.remove('md:-top-[100px]', '-top-[80px]')
+      document.querySelector('header').classList.add('top-0')
     }
     else {
-      document.querySelector('header').classList.remove('bg-white', 'py-2','md:py-5')
-      document.querySelector('header').classList.add('py-10')
+      document.querySelector('header').classList.remove('top-0')
+      document.querySelector('header').classList.add('md:-top-[100px]', '-top-[80px]')
     }
   }
 

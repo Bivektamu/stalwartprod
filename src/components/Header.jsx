@@ -28,7 +28,7 @@ export const Header = () => {
 
 
   return (
-    <header className={`md:flex justify-center py-10 fixed z-10 top-0 left-0 w-full transition-all duration-300`}>
+    <header className={`md:flex bg-white justify-center md:h-[100px] fixed z-20 h-[80px] -top-[80px] md:-top-[100px] left-0 w-full transition-all duration-300`}>
       <div className="lg:container md:w-full flex md:px-10 px-4 justify-between items-center">
         <div className='list-none cursor-pointer'>
           <img onClick={(e) => onClick(e)} linkto='hero' src='/images/logo.svg' alt="" className='w-40 md:w-48' />

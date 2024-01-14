@@ -1,13 +1,37 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 export const Hero = () => {
-  const ref = useRef(null)
+  const parallaxRef = useRef(null)
+  const heroRefs = useRef([])
 
+  const [animate, setAnimate] = useState(0)
+ 
   useEffect(() => {
+    console.log(heroRefs)
+    let timer = 500
+    // setTimeout(()=> {
+      parallaxRef.current.style.transform = `scale(1)`
+    // }, 200)
+
+  
+    if(window.scrollY === 0) {
+
+    }
+    setTimeout(() => {
+      heroRefs.current[0].classList.add('animated')
+    }, 500);
+
+    setTimeout(() => {
+      heroRefs.current[1].classList.add('animated')
+      parallaxRef.current.classList.remove('transition-transform', 'duration-1000')
+    }, 1000);
+
     window.addEventListener('scroll', parallax)
     return (() => {
       window.removeEventListener('scroll', parallax)
     })
+
+
   }, [])
 
   function parallax() {
@@ -16,19 +40,17 @@ export const Hero = () => {
     if (s <= window.innerHeight) {
       const m = 200 / h
       const  y = (m * s)
-
-      ref.current.style.transform = `translateY(${y}px)`
-      // y = mx + b
+      parallaxRef.current.style.transform = `translateY(${y}px)`
     }
   }
   return (
     <>
-      <div id="landing" className='w-full h-screen relative overflow-hidden'>
-        <img alt="" ref={ref} src='/images/hero.jpg' className='absolute top-0 left-0 w-full h-full object-cover object-bottom' />
+      <div id="landing" className='w-full h-screen relative overflow-hidden after:content-[""] after:w-full after:h-full after:absolute after:bg-black/50'>
+        <img alt="" style={{transform: `scale(1.1)`}} ref={parallaxRef} src='/images/3.jpg' className='transition-transform duration-1000  absolute top-0 left-0 w-full h-full object-cover object-bottom' />
 
-        <div className="absolute top-80 left-0 right-0 text-center px-4">
-          <h1 className="text-black text-4xl md:text-6xl mb-8">Concept to Completion</h1>
-          <span className="text-black text-sm md:text-base">Experience the power of our real estate media productions that showcase properties in a unique and compelling way.</span>
+        <div className="absolute top-80 left-0 right-0 text-center px-4 z-10">
+          <h1 className=" text-4xl md:text-6xl mb-8 wow fadeInUp" ref={e=>heroRefs.current[0] = e}>Concept to Completion</h1>
+          <span className="text-white text-sm md:text-base wow block fadeInUp" ref={e=>heroRefs.current[1] = e}>Experience the power of our real estate media productions that showcase properties in a unique and compelling way.</span>
 
         </div>
         {/* <h1 className="absolute top-80 left-0 right-0 text-center text-black">Captivating Real Estate<br />media Productions <br />That stand&nbsp;Out</h1> */}
