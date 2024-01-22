@@ -53,8 +53,8 @@ export const Plan = () => {
             <p className='leading-10 mb-6'>
               <span className="font-medium wow fadeInUp">12 Professional photos</span><br />
               <span className="font-medium wow fadeInUp">2D floorplan(1-2 beds)</span><br />
-              <span className="font-medium wow fadeInUp">Cinematic video</span>
-              <span className="font-medium wow fadeInUp">Agent intro</span>
+              <span className="font-medium wow fadeInUp">Cinematic video</span><br />
+              <span className="font-medium wow fadeInUp">Agent intro</span><br />
               <span className="font-medium wow fadeInUp">3D virtual tour</span>
             </p>
 
