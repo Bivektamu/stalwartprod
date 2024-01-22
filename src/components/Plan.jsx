@@ -49,7 +49,7 @@ export const Plan = () => {
 
           <div className='bg-white px-6 relative pt-6 pb-24 hover:bg-aeroBlue hover:shadow-black hover:shadow-2xl transition-all ease-in duration-200 group border-b-8 hover:border-black border-grey wow fadeInUp'>
             <h3 className='text-base md:text-xl wow fadeInUp mb-4 md:mb-8'>Platinum</h3>
-            <h4 className="text-base md:text-xl mb-4 wow fadeInUp">Photo/Video Package<br />$ 620</h4>
+            <h4 className="text-base md:text-xl mb-4 wow fadeInUp">Photo/Video Package<br />$ 1185</h4>
             <p className='leading-10 mb-6'>
               <span className="font-medium wow fadeInUp">12 Professional photos</span><br />
               <span className="font-medium wow fadeInUp">2D floorplan(1-2 beds)</span><br />
