@@ -37,10 +37,12 @@ export const Contact = () => {
     try {
       const res = await fetch("https://public.herotofu.com/v1/422e00c0-c028-11ee-891f-6d871096fc6f", {
         method: 'POST',
-        // mode: 'no-cors',
-        cache: "no-cache",
+        acceptCharset: 'UTF-8',
 
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
         body: JSON.stringify(formData)
       })
 
@@ -57,9 +59,9 @@ export const Contact = () => {
     catch (error) {
       if (error) {
         console.log(error.message)
-        if(error.message === 'Failed to fetch') {
-        setSuccess(true)
-        setLoading(false)
+        if (error.message === 'Failed to fetch') {
+          setSuccess(true)
+          setLoading(false)
         }
       }
     }
@@ -91,7 +93,7 @@ export const Contact = () => {
 
                 <input value={firstName} required type='text' name='firstName' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='First Name*' onChange={e => onChange(e)} />
                 <input value={lastName} required type='text' name='lastName' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black ' placeholder='Last Name*' onChange={e => onChange(e)} />
-                <input value={mobile} required type='tel' name='mobile' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Mobile*'pattern='[0-9]{10}' onChange={e => onChange(e)} />
+                <input value={mobile} required type='tel' name='mobile' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Mobile*' pattern='[0-9]{10}' onChange={e => onChange(e)} />
                 <input value={email} required type='email' name='email' className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Email*' onChange={e => onChange(e)} />
                 <select name="interestedIn" value={interestedIn} onChange={e => onChange(e)} required placeholder='Interested In' id="interestedIn" className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
                   <option value="" hidden className=''>Interested In</option>
@@ -103,7 +105,7 @@ export const Contact = () => {
                   <option value="ads" className=''>Ads</option>
                   <option value="evetns_weddings" className=''>Events & Weddings</option>
                 </select>
-                
+
                 <select name="howDidYouHearAboutUs" value={howDidYouHearAboutUs} onChange={e => onChange(e)} required placeholder='How Did You Hear About Us' id="howDidYouHearAboutUs" className='w-full py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black'>
                   <option value="" hidden className=''>How Did You Hear About Us</option>
                   <option value="wordOfMouth" className='py-2'>Word Of Mouth</option>
@@ -112,7 +114,7 @@ export const Contact = () => {
                   <option value="googleSearch" className=''>Google Search</option>
                 </select>
 
-                <textarea name="message" id="message"  className='w-full h-32 md:col-span-2 py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Message' onChange={e => onChange(e)} value={message} />
+                <textarea name="message" id="message" className='w-full h-32 md:col-span-2 py-1 bg-transparent placeholder:text-black text-sm text-black border-b border-black' placeholder='Message' onChange={e => onChange(e)} value={message} />
 
                 <div className="md:col-span-2">
                   <ReCAPTCHA
